@@ -1,0 +1,156 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+body
+{
+    min-height: 100vh; /*atura de 100% da tela*/
+    background-color: #000;    
+    color: #fff;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.bolhas
+{
+    position: absolute;
+    display: flex;
+
+}
+.bolhas span
+{
+    width: 2px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #ffffff,
+    0 0 3px #fff,
+    0 0 3px #fff;
+    animation: animar calc(100s / var(--i)) linear infinite;
+}
+.html
+{
+    background-image: url(./logo-2582748_1280.webp);
+    width: 10px;
+    height: 10px;
+    animation: animar 10s linear infinite;
+}
+/* .bolhas span:nth-of-type(even)
+{
+    background: #2ee8bb;
+} */
+@keyframes animar
+{
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-10vh) scale(1);
+    }
+}
+.navegacao-lista
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 30px;
+}
+.navegacao-lista a
+{
+    color: #fff;
+    transition: 1s;
+}
+.navegacao-lista a:hover
+{
+    color: rgb(127, 255, 0);
+}
+.emote
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+}
+.parte1
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5em;
+    margin-top: 9em;
+}
+.titulo2
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #228b22;
+    transition: 2s;
+}
+.titulo2:hover
+{
+    color: rgb(127, 255, 0);
+    cursor: default;
+    transform: scale(1.1);
+}
+.cards
+{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.card
+{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background: rgba(127, 255, 0, 0.2);
+    border-radius: 10px;
+    gap: 30px;
+    margin-left: 1.2em;
+    padding: 1em;
+}
+.card img
+{
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+.card .texto
+{
+    max-width: 200px;
+}
+.baixo-texto
+{
+    max-width: 200px;
+}
+.projetos
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.projetos img
+{
+    height: 500px;
+    border-radius: 10px;
+}
+.habilidades .tecnologias
+{
+    border: 2px solid;
+    border-radius: 10px;
+}
